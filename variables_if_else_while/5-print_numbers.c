@@ -14,10 +14,7 @@
 {
 	putchar(b10);
 	if (b10 < 57)
-{
-	putchar(44);
-	putchar(32);
-}
+
 	b10++;
 }
 	putchar('\n');
