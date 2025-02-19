@@ -16,11 +16,11 @@
 	putchar(b10);
 
 	if (b10 < 57)
-
+{
 	putchar(',');
 
 	putchar(' ');
-
+}
 	b10++;
 
 }
