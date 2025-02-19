@@ -8,9 +8,9 @@
 
 	while (b10 < 58)
 {
-	putchar(b10\n);
-	if (b10 < 57)
-}
+	putchar(b10);
+	if (b10 < 58)
+
 	b10++;
 }
 return (0);
