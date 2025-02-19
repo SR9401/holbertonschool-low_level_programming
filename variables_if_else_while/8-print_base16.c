@@ -9,7 +9,7 @@
 	int main(void)
 {
 	int b10 = 48;
-	int af = 65;
+	int af = 97;
 
 	while (b10 < 58)
 
@@ -18,7 +18,7 @@
 
 	b10++;
 }
-	while (af < 71)
+	while (af < 103)
 {
 	putchar(af);
 
