@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_alphabet - mm
+ * print_alphabet_x10 - mm
  *
  *  Return: Always 0
 */
@@ -13,7 +13,7 @@ int print_alphabet_x10(void)
 
 	int alpha = 'a';
 
-	while (a != 10)
+	while (a < 10)
 {
 	while (alpha != 'z')
 {
