@@ -13,19 +13,17 @@ int print_alphabet_x10(void)
 
 	int alpha = 'a';
 
+	while (a < 10)
 {
 	while (alpha != 'z')
-
+{
 	_putchar(alpha);
 
 	alpha++;
 }
-	while (a < 10)
-{
 	_putchar('\n');
 
 	a++;
-
 
 }
 	return (0);
