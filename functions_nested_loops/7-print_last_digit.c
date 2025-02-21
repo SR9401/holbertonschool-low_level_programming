@@ -2,7 +2,6 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *
  *print_last_digit - mm
  *@n:  mmm
  *  Return: Always 0
