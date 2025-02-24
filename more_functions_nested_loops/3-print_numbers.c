@@ -13,11 +13,11 @@ void print_numbers(void)
 
 	while (b10 < 58)
 {
-	putchar(b10);
+	_putchar(b10);
 
 	b10++;
 }
 
-	putchar('\n');
+	_putchar('\n');
 }
 
