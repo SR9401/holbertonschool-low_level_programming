@@ -30,8 +30,18 @@
 		{
 			printf("%d", num);
 		}
+
+
+
+		if (num == 100)
+	{
+		num++;
+	}
+		else
+	{
 		putchar(' ');
 		num++;
+	}
 	}
 	return (0);
 }
