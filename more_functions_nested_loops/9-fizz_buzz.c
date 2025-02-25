@@ -1,12 +1,17 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+*main - pppp
+*
+*
+*Return: Always 0
+**/
 
 	int main(void)
 {
-	int num = '1';
+	int num = 1;
 
-		while (num < 100)
+		while (num <= 100)
 	{
 			if ((num % 3 == 0) && (num % 5 == 0))
 		{
@@ -26,10 +31,10 @@
 		}
 			else
 		{
-			putchar(num);
+			printf("%d", num);
 			putchar(' ');
 		}
 		num++;
 	}
-	return(0);
+	return (0);
 }
