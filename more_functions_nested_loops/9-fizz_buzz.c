@@ -2,28 +2,34 @@
 #include "main.h"
 
 
+	int main(void)
 {
-	int num = 0
-
+	int num = '1';
 
 		while (num < 100)
 	{
-			if (num % 3 = 0)
+			if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			printf("Fizz")
-			num++;
+			printf("FizzBuzz");
+			putchar(' ');
 		}
-			else if (num % 5 = 0)
+			else if (num % 5 == 0)
 		{
-			printf("Buzz")
-			num++
+			printf("Buzz");
+			putchar(' ');
+		}
+			else if (num % 3 == 0)
+		{
+			printf("Fizz");
+			putchar(' ');
+
 		}
 			else
 		{
-			_putchar(num);
-			num++;
+			putchar(num);
+			putchar(' ');
 		}
-
+		num++;
 	}
-
+	return(0);
 }
