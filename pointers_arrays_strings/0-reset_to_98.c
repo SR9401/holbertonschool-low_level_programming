@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*main - pppp
+*reset_to_98 - pppp
 *
-*
+*@n: rrr
 *Return: Always 0
 **/
 
