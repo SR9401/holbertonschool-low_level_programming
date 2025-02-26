@@ -3,7 +3,7 @@
 /**
 *_strlen - pppp
 *
-*@*s: rrr
+*@s: rrr
 *Return: lenght of *s
 **/
 
@@ -16,5 +16,5 @@
 	l++;
 	s++;
 }
-	return(l);
+	return (l);
 }
