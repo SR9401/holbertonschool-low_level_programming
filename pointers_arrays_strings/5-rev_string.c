@@ -8,31 +8,19 @@
 **/
 
 
-
-	void rev_string(char *s)
-
-
+void rev_string(char *s)
 {
-	char *a = s;
+int plouf = 0;
+int i;
+char temp;
 
-		while (*s != '\0')
-	{
-		putchar(*s);
-
-		s++;
-
-	}
-
+for(plouf = 0; s[plouf] != '\0'; plouf ++)
 {
-	putchar('\n');
 }
-
-
-		while (a < s)
-	{
-
-		s--;
-		putchar(*s);
-	}
-	putchar('\n');
+for(i = 0; i < plouf / 2 ; i ++)
+{
+temp = s[i];
+s[i] = s[plouf - i - 1 ];
+s [plouf - i - 1 ] = temp;
+}
 }
