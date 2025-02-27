@@ -14,13 +14,13 @@ int plouf = 0;
 int i;
 char temp;
 
-for(plouf = 0; s[plouf] != '\0'; plouf ++)
+for (plouf = 0; s[plouf] != '\0'; plouf++)
 {
 }
-for(i = 0; i < plouf / 2 ; i ++)
+for (i = 0; i < plouf / 2 ; i++)
 {
 temp = s[i];
-s[i] = s[plouf - i - 1 ];
-s [plouf - i - 1 ] = temp;
+s[i] = s[plouf - i - 1];
+s[plouf - i - 1] = temp;
 }
 }
