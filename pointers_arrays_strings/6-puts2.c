@@ -12,7 +12,7 @@
 	void puts2(char *str)
 
 {
-	{
+/**	{
 
 		while(str <= 0)
 
@@ -23,7 +23,7 @@
 
 
 
-
+**/
 
 		while (*str != '\0')
 	{
