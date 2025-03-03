@@ -21,6 +21,10 @@
 		{
 			return ((s + a));
 		}
+			else if (s[a] == '\0')
+		{
+			return (NULL);
+		}
 	}
 	return (NULL);
 }
