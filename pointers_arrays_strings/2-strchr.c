@@ -17,7 +17,7 @@
 	{
 		a++;
 
-			if (a == c)
+			if (s[a] == c)
 		{
 			return ((s + a));
 		}
