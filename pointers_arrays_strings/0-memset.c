@@ -17,9 +17,8 @@ unsigned int i = 0;
 
 		while (i != n)
 	{
-		*s = b;
-		s++;
+		s[i] = b;
 		i++;
 	}
-return(s);
+return (s);
 }
