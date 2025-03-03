@@ -17,14 +17,14 @@
 	{
 		a++;
 
-			if (a == '\0')
+			if (a == c)
 		{
-			return (NULL);
+			return ((s + a));
 		}
 			else
 		{
 
 		}
 	}
-	return ((s + a));
+	return (NULL);
 }
