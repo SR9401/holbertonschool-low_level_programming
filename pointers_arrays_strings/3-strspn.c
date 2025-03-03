@@ -1,27 +1,27 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*_strcpy - pppp
+*_strspn - pppp
 *
-*@src: yyyy
+*@s: yyyy
 *
-*@dest: rrr
+*@accept: rrr
 *Return: Always 0
 **/
 
-	unsigned int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i = 0;
-	unsigned int num = 0;
-	while (s[i] != accept[num])
+	unsigned int i, j;
+
+	i = 0;
+	while (s[i] != '\0')
 	{
-			while (s[i] == accept[num])
-		{
-			num++;
-		}
-
-
+		j = 0;
+		while (accept[j] != '\0' && s[i] != accept[j])
+			j++;
+		if (accept[j] == '\0')
+			return (i);
 		i++;
 	}
-	return(i);
+	return (i);
 }
