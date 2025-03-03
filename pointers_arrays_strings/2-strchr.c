@@ -21,10 +21,6 @@
 		{
 			return ((s + a));
 		}
-			else
-		{
-
-		}
 	}
 	return (NULL);
 }
