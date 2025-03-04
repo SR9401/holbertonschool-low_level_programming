@@ -8,7 +8,6 @@
 *@needle: rrr
 *Return: Always 0
 **/
-
 char *_strstr(char *haystack, char *needle)
 {
 	int i;
@@ -16,13 +15,13 @@ char *_strstr(char *haystack, char *needle)
 	if (*needle == 0)
 		return (haystack);
 
-	while (*haystack != '\0')
+	while (*haystack)
 	{
 		i = 0;
 
 		if (haystack[i] == needle[i])
 		{
-			do {			{
+			do {
 				if (needle[i + 1] == '\0')
 					return (haystack);
 				i++;
@@ -30,5 +29,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 		haystack++;
 	}
-	return (NULL);
+	return ('\0');
 }
