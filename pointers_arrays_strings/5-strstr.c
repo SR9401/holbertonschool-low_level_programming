@@ -9,42 +9,26 @@
 *Return: Always 0
 **/
 
-/*char *_strstr(char *haystack, char *needle)
-{
-	int i, b;
-	i = 0;
-		while (haystack[i] != '\0')
-	{
-		b = 0;
-			while (needle[b] != '\0')
-		{
-			if (needle[b] == haystack[i])
-			int c = i;
-			b++;
-			i++;
-        {
-		}
-		i++;
-	}
-	return (NULL);
-*/
 char *_strstr(char *haystack, char *needle)
 {
-	int i, b;
-	b = 0;
-		while (needle[i] != haystack[b])
+	int i;
+
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack != '\0')
 	{
 		i = 0;
-		b++;
-	}
-			while (haystack[b] < '\0' || needle[i] != haystack[b])
+
+		if (haystack[i] == needle[i])
 		{
-			i++;
-			b++;
-				if (needle[i] == '\0')
-			{
-				return ();
-			}
+			do {			{
+				if (needle[i + 1] == '\0')
+					return (haystack);
+				i++;
+			} while (haystack[i] == needle[i]);
 		}
-return (NULL);
+		haystack++;
+	}
+	return (NULL);
 }
