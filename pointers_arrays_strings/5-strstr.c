@@ -37,21 +37,14 @@ char *_strstr(char *haystack, char *needle)
 		i = 0;
 		b++;
 	}
-		if (needle[i] == haystack[b])
-	{
 			while (haystack[b] < '\0' || needle[i] != haystack[b])
 		{
 			i++;
 			b++;
 				if (needle[i] == '\0')
 			{
-				return (needle + 0);
-			}
-				else
-			{
-				return (NULL);
+				return ();
 			}
 		}
-	}
 return (NULL);
 }
