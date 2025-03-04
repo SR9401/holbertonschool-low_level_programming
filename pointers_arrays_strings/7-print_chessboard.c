@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*_strpbrk - pppp
+*print_chessboard - pppp
 *
-*@s: yyyy
+*@a: yyyy
 *
-*@accept: rrr
+*
 *Return: Always 0
 **/
 
