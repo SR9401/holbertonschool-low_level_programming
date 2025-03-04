@@ -14,7 +14,7 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int i, num;
 
 	i = 0;
-		while (s[i] != '\0')
+		while (s[i] >= '\0')
 	{
 
 		num = 0;
