@@ -2,29 +2,35 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - oiug
- * @n: ppllp
- *
- * Return: pp
+*_sqrt_recursion - oiug
+* @n: ppllp
+*
+*_rc - oiugol
+*
+* Return: pp
 **/
 int _sqrt_recursion(int n)
 {
 
-    return _sqrt(n, 0);
+	return (_rc(n, 0));
 }
-int _sqrt(int n, int a)
+
+
+
+
+int _rc(int n, int a)
+{
+		if (a * a == n)
 	{
-			if (a * a == n)
-		{
-			return (a);
-		}
-			if (a * a > n)
-		{
-			return (-1);
-		}
-			else
-		{
-			return _sqrt(n, a + 1);
-		}
+		return (a);
 	}
+		if (a * a > n)
+	{
+		return (-1);
+	}
+		else
+	{
+		return (_rc(n, a + 1));
+	}
+}
 
