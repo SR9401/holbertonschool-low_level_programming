@@ -44,3 +44,5 @@ int _sqrt_recursion(int n);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int _rc(int n, int a);
+int is_prime_number(int n);
+int _pn(int n, int a);

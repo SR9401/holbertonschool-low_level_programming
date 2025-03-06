@@ -15,7 +15,14 @@ int _sqrt_recursion(int n)
 	return (_rc(n, 0));
 }
 
-
+/**
+*_rc - oiug
+* @n: ppllp
+*
+*@a: mdlmmd
+*
+* Return: pp
+**/
 
 
 int _rc(int n, int a)
