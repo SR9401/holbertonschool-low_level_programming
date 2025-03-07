@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+*main - jjjjj
+*
+*@argc: ppppp
+*
+*@argv: 45452
+*
+*Return: zero
+**/
+
+
+	int main(int argc __attribute__((unused)),char *argv[])
+
+
+	if (argc == 3)
+
+{
+	{
+
+		printf("%d\n", argv[1] * argv[2]);
+
+		return (0);
+	}
+}
+
+	else
+{
+
+	printf(
