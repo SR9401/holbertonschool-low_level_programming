@@ -33,15 +33,15 @@
 			{
 					if (!isdigit(argv[i][j]))
 				{
-					printf("Error");
+					printf("Error\n");
 					return (1);
 				}
 					j++;
 
-
-			sum += atoi(argv[i]);
-			i++;
 			}
+		sum += atoi(argv[i]);
+		i++;
+
 		}
 	printf("%d\n", sum);
 }
