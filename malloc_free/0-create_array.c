@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * *create_array - prints buffer in hexa
+ * @c: hfvg
+ * @size: nhiuh
  *
  * Return: Nothing.
  */
@@ -23,7 +23,7 @@
 		return (NULL);
 	}
 	i = 0;
-	while ( i < size)
+	while (i < size)
 	{
 		s[i] = c;
 		i++;

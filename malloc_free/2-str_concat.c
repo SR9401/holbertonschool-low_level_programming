@@ -14,6 +14,9 @@
 {
 
 	char *s;
+	int i = 0;
+
+
 
 	if (s1 == 0)
 	{
@@ -22,8 +25,7 @@
 	{
 
 	s = malloc(((*s1 + *s2) + 1) * sizeof(char));
-	strcpy(s, s1);
-	strcpy(s, s2);
+	strcpy(s, s
 	return (s);
 	}
 

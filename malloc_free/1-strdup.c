@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * _strdup - prints str in s
+ * @str: fer
+ *
  *
  * Return: Nothing.
  */
@@ -15,16 +15,25 @@
 {
 
 	char *s;
+	int i = 0;
 
-	s = malloc((*str + 1) * sizeof(char));
-	if (str == 0)
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	if (i == 0)
 	{
 		return (NULL);
 	}
 	{
 
 	s = malloc((*str + 1) * sizeof(char));
-	strcpy(s, str);
+	i = 0;
+	while (str[i] != '\0')
+	{
+		s[i] = str[i];
+		i++;
+	}
 	return (s);
 	}
 
