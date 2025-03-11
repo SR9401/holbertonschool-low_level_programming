@@ -3,25 +3,58 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *strconcat - prints str in s
- * @s1: fer
- *@s2: rlr
+ * alloc_grid - prints str in s
+ * @height: fer
+ *@width: rlr
  *
  * Return: Nothing.
  */
 
-	char *str_concat(char *s1, char *s2)
+	int **alloc_grid(int width, int height)
 
 {
-
-	char *s;
+	int **ptrg;
 	int i = 0;
-	int z = 0;
-	while (s1[i] != '\0')
-	{
-		i++;
-	}
-	if (i == 0)
+	int b = 0;
+	if (width <= 0)
 	{
 		return (NULL);
 	}
+	else if (height <= 0)
+	{
+		return (NULL);
+	}
+	else
+	{
+		ptrg = malloc(width * sizeof(int *));
+	}
+	if (ptrg == NULL)
+	{
+		free(ptrg);
+		return (NULL);
+	}
+	while (i < width)
+	{
+		ptrg[i] = malloc(height * sizeof(int *));
+		if (ptrg[i] == NULL)
+		{
+			while(b < i)
+			{
+				free(ptrg[b]);
+				b++;
+			}
+		return (NULL);
+		}
+		else
+		{
+		int z = 0;
+			while (z < height)
+			{
+			ptrg[i][z] = 0;
+			z++;
+			}
+		}
+	i++;
+	}
+return (ptrg);
+}
