@@ -17,11 +17,19 @@
 	int i, z;
 
 	for (i = 0; s1[i] != '\0'; i++)
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
 	for (z = 0; s2[z] != '\0'; z++)
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
 	s = malloc(((i + z) + 1) * sizeof(char));
 	if (s == NULL)
 	{
-	return(NULL);
+	return (NULL);
 	}
 	else
 	{
