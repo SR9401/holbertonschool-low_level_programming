@@ -25,7 +25,7 @@
 
 	if (i == 0)
 	{
-		return (NULL);
+		s1 = "";
 	}
 	while (s2[z] != '\0')
 	{
@@ -33,11 +33,19 @@
 	}
 	if (z == 0)
 	{
-		return (NULL);
+		s2 = "";
 	}
-	s = malloc((*s1 + *s2) * sizeof(char));
+	s = malloc(((i + z) + 1) * sizeof(char));
+	if (s == NULL)
+	{
+	free(s);
+	return(NULL);
+	}
+	else
+	{
 	i = 0;
 	z = 0;
+	}
 	while (s1[i] != '\0')
 	{
 		s[i] = s1[i];
