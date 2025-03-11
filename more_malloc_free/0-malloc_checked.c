@@ -14,6 +14,7 @@
 
 {
 	unsigned int *s;
+
 	s = malloc(b);
 	if (s == NULL)
 	{
