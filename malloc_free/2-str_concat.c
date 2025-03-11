@@ -14,31 +14,13 @@
 
 {
 	char *s;
-	int i = 0;
-	int z = 0;
+	int i, z;
 
-	while (s1[i] != '\0')
-
-	{
-		i++;
-	}
-
-	if (i == 0)
-	{
-		s1 = "";
-	}
-	while (s2[z] != '\0')
-	{
-		z++;
-	}
-	if (z == 0)
-	{
-		s2 = "";
-	}
+	for (i = 0; s1[i] != '\0'; i++)
+	for (z = 0; s2[z] != '\0'; z++)
 	s = malloc(((i + z) + 1) * sizeof(char));
 	if (s == NULL)
 	{
-	free(s);
 	return(NULL);
 	}
 	else
