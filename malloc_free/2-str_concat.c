@@ -3,30 +3,49 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * *strconcat - prints str in s
+ * @s1: fer
+ *@s2: rlr
  *
  * Return: Nothing.
  */
 
 	char *str_concat(char *s1, char *s2)
+
 {
 
 	char *s;
 	int i = 0;
-
-
-
-	if (s1 == 0)
+	int z = 0;
+	while (s1[i] != '\0')
+	{
+		i++;
+	}
+	if (i == 0)
 	{
 		return (NULL);
 	}
+	while (s2[z] != '\0')
 	{
-
-	s = malloc(((*s1 + *s2) + 1) * sizeof(char));
-	strcpy(s, s
-	return (s);
+		z++;
 	}
-
+	if (z == 0)
+	{
+		return (NULL);
+	}
+	s = malloc(((*s1 + *s2) + 1) * sizeof(char));
+	i = 0;
+	z = 0;
+	while (s1[i] != '\0')
+	{
+		s[i] = s1[i];
+		i++;
+	}
+	while (s2[z] != '\0')
+	{
+		s[i] = s2[z];
+		i++;
+		z++;
+	}
+	return (s);
 }
