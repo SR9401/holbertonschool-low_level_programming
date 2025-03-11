@@ -35,7 +35,7 @@
 	{
 		return (NULL);
 	}
-	s = malloc(((*s1 + *s2) + 1) * sizeof(char));
+	s = malloc((*s1 + *s2) * sizeof(char));
 	i = 0;
 	z = 0;
 	while (s1[i] != '\0')
