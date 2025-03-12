@@ -28,7 +28,14 @@
 	{
 
 	s = malloc((i + 1) * sizeof(char));
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
 	i = 0;
+	}
 	while (str[i] != '\0')
 	{
 		s[i] = str[i];
