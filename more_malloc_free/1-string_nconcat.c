@@ -45,12 +45,11 @@
 	}
 	else
 	{
-		for (z = 0; z <= n; z++)
+		for (z = 0; z == n; z++)
 		{
 			s[i] = s2[z];
 			i++;
 		}
-		i++;
 		s[i] = '\0';
 	}
 	return (s);
