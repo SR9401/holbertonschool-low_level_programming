@@ -43,7 +43,7 @@
 			i++;
 		}
 	}
-	else
+	else if (n < z)
 	{
 		for (z = 0; z == n; z++)
 		{
