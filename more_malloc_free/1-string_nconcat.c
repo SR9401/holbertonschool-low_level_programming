@@ -45,7 +45,7 @@
 	}
 	else
 	{
-		for (z = 0; z != n; z++)
+		for (z = 0; z == n; z++)
 		{
 			s[i] = s2[z];
 			i++;
