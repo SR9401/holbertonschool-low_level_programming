@@ -5,21 +5,21 @@
  * init_dog - info dog
  *
  * @name: nom du chien
- * 
+ *
  * @owner: proprietaire
- * 
- * @age: age du chien 
- * 
+ *
+ * @age: age du chien
+ *
  * Return: Always 0.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 
 {
 
-    if (d != NULL)
-    {
-        d->name = name;
-        d->age = age;
-        d->owner = owner;
-    }
+	if (d != NULL)
+	{
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
+	}
 }
