@@ -6,7 +6,7 @@
 *
 *@name: pointers name
 *
-*@*f:pointer to called function of main
+*@f:pointer to called function of main
 *
 *Return: lenght of *s
 **/
