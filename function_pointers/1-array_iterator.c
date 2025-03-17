@@ -2,13 +2,23 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 /**
-*print_name - function to print a name
+*array_iterator - function to parkour array of function
 *
-*@name: pointers name
+*@array: array of pointer
 *
-*@f:pointer to called function of main
+*@action: pointer to the function
+*
+*@size: size of array
 *
 *Return: lenght of *s
 **/
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+unsigned int i = 0;
+
+	while (i != size)
+	{
+		action(array[i]);
+		i++;
+	}
+}
