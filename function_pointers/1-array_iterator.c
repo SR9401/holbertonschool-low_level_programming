@@ -10,18 +10,5 @@
 *
 *Return: lenght of *s
 **/
-void print_name(char *name, void (*f)(char *))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (f == NULL)
-		{
-		return;
-		}
-	else if (name == NULL)
-		{
-		return;
-		}
-	else
-		{
-		f(name);
-		}
-}
