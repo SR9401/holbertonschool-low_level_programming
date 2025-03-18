@@ -10,10 +10,13 @@ op_t ops[] = {
 	};
 	int i = 0;
 
-	while (i < strlen(ops))
+	while (ops[i].op != NULL )
 	{
-		if (strcmp(s, ops[i]) == 0)
+		if (strcmp(s, ops[i].op) == 0)
 		{
-			return(ops[i]);
+			return(ops[i].f);
 		}
+	i++
 	}
+	return(NULL);
+}
