@@ -4,7 +4,7 @@
  * main - Programme principal pour effectuer une opération simple
  * @argc: Nombre d'arguments
  * @argv: Tableau d'arguments
- * Return: 0 si succès, 98/99/100 selon les erreurs
+ * Return: 0 si succes, 98/99/100 selon les erreurs
  */
 int main(int argc, char *argv[])
 {
