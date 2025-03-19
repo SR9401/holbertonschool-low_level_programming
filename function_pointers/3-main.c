@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	{
 	printf("Error\n");
 	return (98);
-
+	}
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
 
