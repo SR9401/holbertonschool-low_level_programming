@@ -1,30 +1,35 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
+
 /**
- * main - entry point for function
- * @argc: arg counter, number of args
- * @argv: array of pointers to args
- *
- *
- * Return: 0 on success, 98 on failure
+ * main - Programme principal pour effectuer une opération simple
+ * @argc: Nombre d'arguments
+ * @argv: Tableau d'arguments
+ * Return: 0 si succès, 98/99/100 selon les erreurs
  */
 int main(int argc, char *argv[])
 {
+	int (*operator)(int, int);
+	int n1, n2, resultat;
 
 	if (argc != 4)
 	{
-		printf("Error\n");
-		return (98);
-	}
+	printf("Error\n");
+	return (98);
 
-	char operator;
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[3]);
 
 	operator = get_op_func(argv[2]);
 
-	int n1 = atoi(argv[1]);
-	int n2 = atoi(argv[3]);
-	int resultat = operator (n1, n2);
+	if (operator == NULL)
+	{
+	printf("Error\n");
+	return (99);
+	}
 
+	resultat = operator(n1, n2);
 	printf("%d\n", resultat);
+
+	return (0);
 }
+
