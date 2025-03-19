@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	int n1 = atoi(argv[1]);
 	int n2 = atoi(argv[3]);
-	int resultat = operator n1 n2
+	int resultat = operator (n1, n2);
 
 	printf("%d\n", resultat);
 }
