@@ -38,6 +38,7 @@ const unsigned int i = 0;
 				}
 				i++;
 			}
-	va_end
-
+				
+	va_end(args);
+	}
 }
