@@ -2,10 +2,10 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - Retourne la somme de tous ses paramètres
+ * print_numbers - Retourne la somme de tous ses paramètres
  * @n: Nombre d'arguments
- *
- * Return: Somme des arguments, ou 0 si n == 0
+ * @separator: element separateur
+ * Return: liste argument separer par le separateur
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -13,7 +13,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 {
 
-const unsigned int i = 0;
+	unsigned int i;
 	va_list args;
 
 	if (separator == NULL || n == 0)
@@ -24,21 +24,21 @@ const unsigned int i = 0;
 	{
 	va_start(args, n);
 
-			while (i <= n)
+			for (i = 0; i < n; i++)
 			{
 				int num = va_arg(args, int);
+
 				printf("%d", num);
-				if (i < n )
+				if (i < (n - 1))
 				{
 					printf("%s", separator);
 				}
-				else
+				else if (i < n)
 				{
 					printf("\n");
 				}
-				i++;
 			}
-				
+
 	va_end(args);
 	}
 }
