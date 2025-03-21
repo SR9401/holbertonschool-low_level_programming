@@ -70,7 +70,6 @@ prin_t p[] = {
 	{'\0', NULL}
 };
 
-	int i = 0;
 	int n = 0;
 
 	va_start(args, format);
@@ -81,11 +80,16 @@ prin_t p[] = {
 
 	while (format[n] != '\0')
 	{
+		int i =0;
+
 		while (p[i].type != '\0')
 		{
-			p[i].func(args);
-			i++;
-			printf(", ");
+			if (format[n] == p[i].type)
+			{
+				p[i].func(args);
+				printf(", ");
+			}
+		i++;
 		}
 		n++;
 	}
