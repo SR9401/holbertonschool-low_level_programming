@@ -69,12 +69,11 @@ prin_t p[] = {
 	{'s', print_string},
 	{'\0', NULL}
 };
-	int j = 0;
 	int n = 0;
 
 	va_start(args, format);
 
-	while (format[n + 1] != '\0')
+	while (format[n] != '\0')
 	{
 		int i = 0;
 		while (p[i].type != '\0')
@@ -84,13 +83,11 @@ prin_t p[] = {
 				p[i].func(args);
 				printf(", ");
 			}
-		j++;
 		i++;
 		}
 		n++;
 
 	}
-p[j / (n + 1)].func(args);
 printf("\n");
 va_end(args);
 }
