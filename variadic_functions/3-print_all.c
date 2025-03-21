@@ -73,10 +73,6 @@ prin_t p[] = {
 	int n = 0;
 
 	va_start(args, format);
-	if (format == NULL)
-	{
-		printf("\n");
-	}
 
 	while (format[n + 1] != '\0')
 	{
