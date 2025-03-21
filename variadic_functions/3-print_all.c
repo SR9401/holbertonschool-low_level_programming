@@ -76,6 +76,7 @@ prin_t p[] = {
 	while (format[n] != '\0')
 	{
 		int i = 0;
+
 		while (p[i].type != '\0')
 		{
 			if (format[n] == p[i].type)
