@@ -1,14 +1,19 @@
+#include "lists.h"
+
 /**
  * print_list - fonction qui imprimme tout les elemnts de la liste (list_t)
- * 
- * list_t: liste qui contiennt tout les elements a imprimer 
- * 
+ *
+ * list_t: liste qui contiennt tout les elements a imprimer
+ *
+ * @h: header
+ *
+ * Return: number of nodes
  */
 
 size_t print_list(const list_t *h)
 
 {
-int count = 0;
+ unsigned int count = 0;
 
 while (h != NULL)
 {
