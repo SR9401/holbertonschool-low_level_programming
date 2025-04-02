@@ -37,6 +37,9 @@ n_noeud->n = n;
 			tmp = tmp->next;
 		}
 	tmp->next = n_noeud;
+
+	n_noeud->prev = tmp;
+	n_noeud->next = NULL;
 	}
 return (n_noeud);
 }
