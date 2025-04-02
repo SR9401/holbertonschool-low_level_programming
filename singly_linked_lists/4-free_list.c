@@ -15,6 +15,7 @@ list_t *n_noeud;
 		while (head != NULL)
 		{
 		n_noeud = head->next;
+		free(head->str);
 		free(head);
 		head = n_noeud;
 		}
