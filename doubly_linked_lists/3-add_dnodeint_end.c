@@ -26,7 +26,8 @@ n_noeud->n = n;
 	if (*head == NULL)
 	{
 	*head = n_noeud;
-
+	n_noeud->prev = NULL;
+	n_noeud->next = NULL;
 	}
 	else
 	{
