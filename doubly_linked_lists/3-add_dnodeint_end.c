@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - fonction qui compte le nombre de noeuds
+ * add_dnodeint_end - fonction qui compte le nombre de noeuds
  *
  * @head: pppp
  *
@@ -31,7 +31,7 @@ n_noeud->n = n;
 	else
 	{
 		tmp = *head;
-		while(tmp->next != NULL)
+		while (tmp->next != NULL)
 		{
 			tmp = tmp->next;
 		}
