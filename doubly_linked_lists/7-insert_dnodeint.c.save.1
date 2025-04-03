@@ -5,11 +5,6 @@
 *
 *@idx: position ou inserer le noeud
 *
-*@h: lllll
-*
-*@n: data du noeud
-*
-*Return: adresse du nouveau noeud
 *
 **/
 
@@ -41,8 +36,6 @@ n_noeud->n = n;
 
 				n_noeud->next = tmp->next;
 				n_noeud->prev = tmp;
-				tmp->next->prev = n_noeud;
-				tmp->next = n_noeud;
 			}
 			else
 			{
@@ -51,6 +44,8 @@ n_noeud->n = n;
 			}
 			i++;
 		}
+
+	n_noeud->next = tmp;
 
 return (n_noeud);
 }
