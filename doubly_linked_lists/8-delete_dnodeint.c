@@ -41,7 +41,7 @@ tmp = *head;
 			i++;
 		}
 	}
-	if (index < i)
+	if (i < index)
 	{
 	return (-1);
 	}
