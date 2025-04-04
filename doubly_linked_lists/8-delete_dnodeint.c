@@ -43,7 +43,7 @@ tmp = *head;
 			i++;
 		}
 	}
-	if (i > index)
+	if (index > i )
 	{
 	return (-1);
 	}
