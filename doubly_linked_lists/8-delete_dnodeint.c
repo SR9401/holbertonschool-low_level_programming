@@ -33,8 +33,12 @@ tmp = *head;
 				tmp->prev->next = tmp->next;
 				tmp->next->prev = tmp->prev;
 				free(tmp);
-
 			}
+			else if (i > index)
+			{
+			return (-1);
+			}
+
 			else
 			{
 				tmp = tmp->next;
@@ -43,7 +47,7 @@ tmp = *head;
 			i++;
 		}
 	}
-	if (index > i || *head == NULL)
+	if (index > i)
 	{
 	return (-1);
 	}
