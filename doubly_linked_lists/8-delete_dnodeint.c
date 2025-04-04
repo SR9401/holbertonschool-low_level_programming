@@ -25,7 +25,6 @@ tmp = *head;
 	}
 	else
 	{
-
 		while (tmp->next != NULL)
 		{
 			if (i == index)
@@ -47,10 +46,5 @@ tmp = *head;
 			i++;
 		}
 	}
-	if (index > i)
-	{
-	return (-1);
-	}
-
 return (1);
 }
